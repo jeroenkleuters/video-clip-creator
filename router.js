@@ -13,15 +13,25 @@ exports.get = function(req, res) {
             res.end();
         });
     } else {
-        if (path === '/' || path === '/home') {
-            require('./controllers/show').get(req, res);
+        switch (path) {
+            case '/':
+                require('./controllers/show').get(req, res);
+                break;
 
-        } else if (path === '/edit') {
-            require('./controllers/edit').get(req, res);
-        }
+            case '/home':
+                require('./controllers/show').get(req, res);
+                break;
 
-        else {
-            require('./controllers/404').get(req, res);
+            case '/edit':
+                require('./controllers/edit').get(req, res);
+                break;
+
+            case '/create':
+                require('./controllers/create').get(req, res);
+                break;
+
+            default:
+                require('./controllers/404').get(req, res);
         }
     }
 }
