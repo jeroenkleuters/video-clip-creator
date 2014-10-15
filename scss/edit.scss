@@ -1,0 +1,49 @@
+body.edit {
+    background-color: #fff;
+    color: #000;
+    line-height: 1em;
+
+
+    .wrap {
+        width: 100%;
+        height: 100%;
+        margin: 20px auto;
+        position: inherit;
+        display: block;
+    }
+
+    .songtext {
+        overflow: auto;
+        width: 300px;
+        float: left;
+        position: inherit;
+
+        p {
+            color: #000;
+            margin-bottom: 4px;
+            cursor: pointer;
+            text-align: left;
+
+            span {
+                margin-left: 1em;
+                background-color: yellow;
+            }
+        }
+    }
+
+    .scenes {
+        width: 700px;
+        float: left;
+    }
+
+    .scene {
+        width: 150px;
+        height: 150px;
+        float: left;
+        opacity: 1;
+    }
+
+}
+
+
+

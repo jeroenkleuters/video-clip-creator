@@ -1,0 +1,128 @@
+body {
+  background: #000;
+  font-family: sans-serif;
+  color: #fff; }
+
+.wrap {
+  width: 1000px;
+  height: 400px;
+  margin: 20px auto;
+  position: relative;
+  display: none; }
+
+body.play section {
+  position: absolute;
+  width: 95%;
+  height: 100%;
+  margin: 1em auto;
+  text-align: center;
+  overflow: hidden; }
+body.play section.scene {
+  z-index: 1;
+  top: 0; }
+body.play section.songtext,
+body.play .controls {
+  z-index: 10; }
+body.play .videoClip {
+  display: block; }
+body.play .videoClip p,
+body.play section.scene {
+  opacity: 0;
+  position: absolute; }
+body.play .videoClip p {
+  background-color: rgba(0, 0, 0, 0.6);
+  font: 6em/1.4em sans-serif;
+  text-decoration: none;
+  font-family: sans-serif;
+  width: 100%;
+  top: -10%;
+  margin-top: 0; }
+body.play .videoClip p.show {
+  opacity: 1;
+  top: 10%;
+  -webkit-transition: opacity 0.4s linear;
+  -moz-transition: opacity 0.4s linear;
+  -ms-transition: opacity 0.4s linear;
+  -o-transition: opacity 0.4s linear;
+  transition: opacity 0.4s linear;
+  -webkit-transition: position 0.4s linear;
+  -moz-transition: opacity 0.4s linear;
+  -ms-transition: opacity 0.4s linear;
+  -o-transition: opacity 0.4s linear;
+  transition: opacity 0.4s linear; }
+body.play .scene.show {
+  opacity: 1;
+  -webkit-transition: opacity 0.8s linear;
+  -moz-transition: opacity 0.8s linear;
+  -ms-transition: opacity 0.8s linear;
+  -o-transition: opacity 0.8s linear;
+  transition: opacity 0.8s linear; }
+body.play .scene.hide {
+  opacity: 0;
+  filter: saturate(1);
+  /* TODO: waarom werkt dit niet?? */
+  -webkit-transition: opacity 0.4s linear;
+  -moz-transition: opacity 0.4s linear;
+  -ms-transition: opacity 0.4s linear;
+  -o-transition: opacity 0.4s linear;
+  transition: opacity 0.4s linear;
+  -webkit-transition: filter 0.4s linear;
+  -moz-transition: filter 0.4s linear;
+  -ms-transition: filter 0.4s linear;
+  -o-transition: filter 0.4s linear;
+  transition: filter 0.4s linear; }
+body.play .scared1 {
+  z-index: 2;
+  top: 30%;
+  left: 28%;
+  position: absolute; }
+body.play .scared2 {
+  position: absolute;
+  top: 30%;
+  left: 28%;
+  z-index: 3;
+  opacity: 0; }
+body.play img.beer {
+  margin: 24px; }
+body.play .controls {
+  position: absolute;
+  bottom: -32px;
+  left: 35%;
+  text-align: center; }
+body.play h1 {
+  opacity: 0.6; }
+
+body.edit {
+  background-color: #fff;
+  color: #000;
+  line-height: 1em; }
+  body.edit .wrap {
+    width: 100%;
+    height: 100%;
+    margin: 20px auto;
+    position: inherit;
+    display: block; }
+  body.edit .songtext {
+    overflow: auto;
+    width: 300px;
+    float: left;
+    position: inherit; }
+    body.edit .songtext p {
+      color: #000;
+      margin-bottom: 4px;
+      cursor: pointer;
+      text-align: left; }
+      body.edit .songtext p span {
+        margin-left: 1em;
+        background-color: yellow; }
+  body.edit .scenes {
+    width: 700px;
+    float: left; }
+  body.edit .scene {
+    width: 150px;
+    height: 150px;
+    float: left;
+    opacity: 1; }
+
+body.rec .controls {
+  display: none; }

@@ -1,0 +1,112 @@
+body.play {
+
+    section {
+        position: absolute;
+        width: 95%;
+        height: 100%;
+        margin: 1em auto;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    section.scene {
+        z-index: 1;
+        top:0;
+    }
+
+    section.songtext,
+    .controls {
+        z-index: 10;
+    }
+
+    .videoClip {
+        display: block;
+    }
+
+    .videoClip p,
+    section.scene {
+        opacity: 0;
+        position: absolute;
+    }
+
+    .videoClip p {
+        background-color: rgba(0, 0, 0, 0.6);
+        font: 6em/1.4em sans-serif;
+        text-decoration: none;
+        font-family: sans-serif;
+        width: 100%;
+        top: -10%;
+        margin-top: 0;
+    }
+
+    .videoClip p.show {
+        opacity: 1;
+        top: 10%;
+        -webkit-transition: opacity 0.4s linear;
+        -moz-transition: opacity 0.4s linear;
+        -ms-transition: opacity 0.4s linear;
+        -o-transition: opacity 0.4s linear;
+        transition: opacity 0.4s linear;
+        -webkit-transition: position 0.4s linear;
+        -moz-transition: opacity 0.4s linear;
+        -ms-transition: opacity 0.4s linear;
+        -o-transition: opacity 0.4s linear;
+        transition: opacity 0.4s linear;
+    }
+
+    .scene.show {
+        opacity: 1;
+        -webkit-transition: opacity 0.8s linear;
+        -moz-transition: opacity 0.8s linear;
+        -ms-transition: opacity 0.8s linear;
+        -o-transition: opacity 0.8s linear;
+        transition: opacity 0.8s linear;
+    }
+
+    .scene.hide {
+        opacity: 0;
+        filter: saturate(1); /* TODO: waarom werkt dit niet?? */
+        -webkit-transition: opacity 0.4s linear;
+        -moz-transition: opacity 0.4s linear;
+        -ms-transition: opacity 0.4s linear;
+        -o-transition: opacity 0.4s linear;
+        transition: opacity 0.4s linear;
+        -webkit-transition: filter 0.4s linear;
+        -moz-transition: filter 0.4s linear;
+        -ms-transition: filter 0.4s linear;
+        -o-transition: filter 0.4s linear;
+        transition: filter 0.4s linear;
+    }
+
+    .scared1 {
+        z-index: 2;
+        top: 30%;
+        left: 28%;
+        position: absolute;
+    }
+
+    .scared2 {
+        position: absolute;
+        top: 30%;
+        left: 28%;
+        z-index: 3;
+        opacity: 0;
+    }
+
+    img.beer {
+        margin: 24px;
+    }
+
+    .controls {
+        position: absolute;
+        bottom: -32px;
+        left: 35%;
+        text-align: center;
+    }
+
+    h1 {
+        opacity: 0.6;
+    }
+
+
+}

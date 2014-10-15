@@ -1,0 +1,30 @@
+{
+  "name": "Video-clip-Creator",
+  "version": "0.0.1",
+  "description": "A web based tool to create your own video karaoke clip",
+  "main": "index.html",
+  "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+  "author": "Jeroen Kleuters",
+  "devDependencies": {
+      "grunt": "^0.4.4",
+      "grunt-contrib-connect": "^0.7.1",
+      "grunt-contrib-watch": "^0.6.0",
+      "grunt-contrib-sass": "^0.7.3",
+      "grunt-contrib-clean": "^0.5.0",
+      "grunt-contrib-csslint": "^0.2.0",
+      "grunt-contrib-jshint": "^0.9.2",
+      "phantomjs": "^1.9.7-1",
+      "grunt-phantomcss": "^0.2.3",
+      "grunt-contrib-copy": "^0.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jeroenkleuters/video-clip-creator.git"
+  },
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/jeroenkleuters/video-clip-creator/issues"
+  }
+}
