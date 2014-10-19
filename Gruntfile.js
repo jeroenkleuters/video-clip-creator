@@ -74,6 +74,7 @@ module.exports = function(grunt) {
             src: 'javascript/**/*.js' // without .js folders are counted too
         },
 
+
         /*
             Not discussed during workshop
             This example copies the entire "javascript" directory to

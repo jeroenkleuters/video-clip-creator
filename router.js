@@ -32,6 +32,7 @@ exports.get = function(req, res) {
 
             default:
                 require('./controllers/404').get(req, res);
+                break;
         }
     }
 }

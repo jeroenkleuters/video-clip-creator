@@ -5,6 +5,6 @@ var tplEditor = require('../views/template-edit');
 exports.get = function(req, res) {
 
  res.writeHead(200, {'Content-Type': 'text/html'});
- res.write( tplMain.build('visite', 'test', tplEditor));
+ res.write( tplMain.build('visite', 'edit', tplEditor));
  res.end();
 }
